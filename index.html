@@ -244,7 +244,7 @@
       <a href="#about">关于</a>
     </nav>
     <div class="spacer"></div>
-    <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.1/MeowChat.apk">下载 Android 版</a>
+    <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.2/MeowChat.apk">下载 Android 版</a>
   </div>
 </header>
 
@@ -253,14 +253,14 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow"><i></i>安卓客户端 · DeepSeek 官方接入 · v3.11.1</span>
+        <span class="eyebrow"><i></i>安卓客户端 · DeepSeek 官方接入 · v3.11.2</span>
         <h1>接官方、导旧账、<br /><span class="grad">按月回看</span>。</h1>
         <p class="lede">
           填上 DeepSeek 官方接口就能开聊，官方网页版导出的对话整包导进来，
           哪一天聊过什么，翻日历就知道。
         </p>
         <div class="cta">
-          <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.1/MeowChat.apk">下载 APK</a>
+          <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.2/MeowChat.apk">下载 APK</a>
           <a class="btn btn-ghost" href="#features">看功能</a>
         </div>
         <div class="meta-row">
@@ -313,7 +313,7 @@
         <div class="card">
           <div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.4"/><path d="M15.6 15.6L20 20"/></svg></div>
           <h3>联网搜索工具</h3>
-          <p>模型可以直接调用 web_search 查资料，完整检索词不拆词，一次读 6–12 篇网页正文，回答按编号标注来源。</p>
+          <p>搜狗结果卡片与 Bing 两路并行检索，按相关度合并去重，再抓网页正文；完整检索词不拆词，抓不到正文时保留引擎摘要。</p>
         </div>
         <div class="card">
           <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 6l-4 6 4 6M16 6l4 6-4 6"/></svg></div>
@@ -339,18 +339,18 @@
     </div>
   </section>
 
-  <!-- ===== 3.11.1 更新 ===== -->
+  <!-- ===== 3.11.2 更新 ===== -->
   <section id="release">
     <div class="wrap">
       <div class="sec-head">
-        <div class="kicker">What's new · 3.11.1</div>
+        <div class="kicker">What's new · 3.11.2</div>
         <h2>这一版，把工具真正打通</h2>
-        <p>联网搜索、历史会话、长期记忆、Python 执行都走真实工具调用，结果直接落到回复里。</p>
+        <p>联网搜索换成双引擎并行取结果再抽正文，历史会话、长期记忆、Python 执行照旧走真实工具调用。</p>
       </div>
       <div class="grid3">
-        <div class="card"><h3>搜索有正文</h3><p>多线程抓取网页正文，不再只给标题和链接；检索过滤不再把结果滤成空。</p></div>
-        <div class="card"><h3>工具结果必作答</h3><p>工具拿到结果后模型据此写答复，异常时自动补答，不再出现「只有思考没有正文」。</p></div>
-        <div class="card"><h3>过程不打扰</h3><p>挂载工具零提示，检索与执行进度收进消息内的状态条，黑色弹条不再打断阅读。</p></div>
+        <div class="card"><h3>双引擎检索</h3><p>搜狗结果卡片与 Bing 结果页并行发出，同址去重、按命中度排序，单引擎被限流也不会空手。</p></div>
+        <div class="card"><h3>正文真的抓得回来</h3><p>字符集与压缩自适应，失败换 UA 重试，按段落抽正文；抽不到时退到引擎摘要，不再只剩标题。</p></div>
+        <div class="card"><h3>检索不再被滤空</h3><p>摘要按块解析、实体解码，过滤只压掉明显无关项，不会把整批结果滤成「什么都没搜到」。</p></div>
       </div>
     </div>
   </section>
@@ -363,14 +363,14 @@
           <div>
             <h2>装上一个<br />就能开始对话的客户端</h2>
             <p>Android 安装包，arm64，67 MB。下载后允许「未知来源安装」即可。不经过应用商店，也就不需要账号。</p>
-            <a class="dl-btn" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.1/MeowChat.apk">
+            <a class="dl-btn" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.2/MeowChat.apk">
               <svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7.5 11l4.5 4.5L16.5 11"/><path d="M5 19.5h14"/></svg>
               下载 MeowChat APK
             </a>
             <div class="tips">安装包为签名版本，覆盖安装不会清空已有会话。</div>
           </div>
           <div class="requirement">
-            <div class="row"><span class="k">版本</span><span class="v">3.11.1</span></div>
+            <div class="row"><span class="k">版本</span><span class="v">3.11.2</span></div>
             <div class="row"><span class="k">架构</span><span class="v">arm64-v8a</span></div>
             <div class="row"><span class="k">系统</span><span class="v">Android 8.0 及以上</span></div>
             <div class="row"><span class="k">体积</span><span class="v">67 MB</span></div>
