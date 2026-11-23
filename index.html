@@ -244,7 +244,7 @@
       <a href="#about">关于</a>
     </nav>
     <div class="spacer"></div>
-    <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.3/MeowChat.apk">下载 Android 版</a>
+    <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.4/MeowChat.apk">下载 Android 版</a>
   </div>
 </header>
 
@@ -253,20 +253,20 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow"><i></i>安卓客户端 · DeepSeek 官方接入 · v3.11.3</span>
+        <span class="eyebrow"><i></i>安卓客户端 · DeepSeek 官方接入 · v3.11.4</span>
         <h1>接官方、导旧账、<br /><span class="grad">按月回看</span>。</h1>
         <p class="lede">
           填上 DeepSeek 官方接口就能开聊，官方网页版导出的对话整包导进来，
           哪一天聊过什么，翻日历就知道。
         </p>
         <div class="cta">
-          <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.3/MeowChat.apk">下载 APK</a>
+          <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.4/MeowChat.apk">下载 APK</a>
           <a class="btn btn-ghost" href="#features">看功能</a>
         </div>
         <div class="meta-row">
           <div><b>官方</b><span>DeepSeek 接口接入</span></div>
           <div><b>本地</b><span>会话不出手机</span></div>
-          <div><b>67 MB</b><span>安装包体积</span></div>
+          <div><b>66 MB</b><span>安装包体积</span></div>
         </div>
       </div>
 
@@ -339,19 +339,19 @@
     </div>
   </section>
 
-  <!-- ===== 3.11.3 更新 ===== -->
+  <!-- ===== 3.11.4 更新 ===== -->
   <section id="release">
     <div class="wrap">
       <div class="sec-head">
-        <div class="kicker">What's new · 3.11.3</div>
-        <h2>这一版，把工具真正打通</h2>
-        <p>联网搜索换成双引擎并行取结果再抽正文，历史会话、长期记忆、Python 执行照旧走真实工具调用。</p>
+        <div class="kicker">What's new · 3.11.4</div>
+        <h2>这一版，模型从接口直接拉</h2>
+        <p>配置页、配置列表、模型页三处都能一键从接口的 /models 拉取清单，新增 APIClaw 中转站入口。</p>
       </div>
       <div class="grid3">
-        <div class="card"><h3>双引擎检索</h3><p>搜狗结果卡片与 Bing 结果页并行发出，同址去重、按命中度排序，单引擎被限流也不会空手。</p></div>
-        <div class="card"><h3>正文真的抓得回来</h3><p>字符集与压缩自适应，失败换 UA 重试，按段落抽正文；抽不到时退到引擎摘要，不再只剩标题。</p></div>
-        <div class="card"><h3>检索不再被滤空</h3><p>摘要按块解析、实体解码，过滤只压掉明显无关项，不会把整批结果滤成「什么都没搜到」。</p></div>
-        <div class="card"><h3>模型带厂商图标</h3><p>模型选择列表和底部胶囊直接显示 DeepSeek、智谱、Kimi、通义、硅基流动的原生图标，深浅配色都做了适配。</p></div>
+        <div class="card"><h3>一键拉取模型</h3><p>新建配置旁有「拉取模型」，配置列表每家一个拉取按钮，模型页可「拉取全部」，拉回即写回清单。</p></div>
+        <div class="card"><h3>APIClaw 接入</h3><p>预置 apiclaw.biz/v1 地址与图标，一把密钥可走 Claude、GPT、Gemini、DeepSeek、Qwen、Kimi、GLM 等模型 ID。</p></div>
+        <div class="card"><h3>错误不再被吞</h3><p>401、超时、返回格式异常都会原样提示，模型列表兼容根数组与 data.models 两种结构。</p></div>
+        <div class="card"><h3>厂商图标补齐</h3><p>配置行也显示厂商原生图标，模型选择列表与底部胶囊的缩略图按接口地址自动识别厂商。</p></div>
       </div>
     </div>
   </section>
@@ -363,18 +363,18 @@
         <div class="dl-grid">
           <div>
             <h2>装上一个<br />就能开始对话的客户端</h2>
-            <p>Android 安装包，arm64，67 MB。下载后允许「未知来源安装」即可。不经过应用商店，也就不需要账号。</p>
-            <a class="dl-btn" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.3/MeowChat.apk">
+            <p>Android 安装包，arm64，66 MB。下载后允许「未知来源安装」即可。不经过应用商店，也就不需要账号。</p>
+            <a class="dl-btn" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.4/MeowChat.apk">
               <svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7.5 11l4.5 4.5L16.5 11"/><path d="M5 19.5h14"/></svg>
               下载 MeowChat APK
             </a>
             <div class="tips">安装包为签名版本，覆盖安装不会清空已有会话。</div>
           </div>
           <div class="requirement">
-            <div class="row"><span class="k">版本</span><span class="v">3.11.3</span></div>
+            <div class="row"><span class="k">版本</span><span class="v">3.11.4</span></div>
             <div class="row"><span class="k">架构</span><span class="v">arm64-v8a</span></div>
             <div class="row"><span class="k">系统</span><span class="v">Android 8.0 及以上</span></div>
-            <div class="row"><span class="k">体积</span><span class="v">67 MB</span></div>
+            <div class="row"><span class="k">体积</span><span class="v">66 MB</span></div>
             <div class="row"><span class="k">网络</span><span class="v">需要</span></div>
           </div>
         </div>
