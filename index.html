@@ -244,7 +244,7 @@
       <a href="#about">关于</a>
     </nav>
     <div class="spacer"></div>
-    <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.15/MeowChat.apk">下载 Android 版</a>
+    <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.19/MeowChat.apk">下载 Android 版</a>
   </div>
 </header>
 
@@ -253,20 +253,20 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow"><i></i>安卓客户端 · DeepSeek 官方接入 · v3.11.15</span>
+        <span class="eyebrow"><i></i>安卓客户端 · DeepSeek 官方接入 · v3.11.19</span>
         <h1>接官方、导旧账、<br /><span class="grad">按月回看</span>。</h1>
         <p class="lede">
           填上 DeepSeek 官方接口就能开聊，官方网页版导出的对话整包导进来，
           哪一天聊过什么，翻日历就知道。
         </p>
         <div class="cta">
-          <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.15/MeowChat.apk">下载 APK</a>
+          <a class="btn btn-primary" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.19/MeowChat.apk">下载 APK</a>
           <a class="btn btn-ghost" href="#features">看功能</a>
         </div>
         <div class="meta-row">
           <div><b>官方</b><span>DeepSeek 接口接入</span></div>
           <div><b>本地</b><span>会话不出手机</span></div>
-          <div><b>66 MB</b><span>安装包体积</span></div>
+          <div><b>67 MB</b><span>安装包体积</span></div>
         </div>
       </div>
 
@@ -339,23 +339,22 @@
     </div>
   </section>
 
-  <!-- ===== 3.11.15 更新 ===== -->
+  <!-- ===== 3.11.19 更新 ===== -->
   <section id="release">
     <div class="wrap">
       <div class="sec-head">
-        <div class="kicker">What's new · 3.11.15</div>
-        <h2>这一版，节奏和上下文都能自己调</h2>
-        <p>输出速度可调、上下文最短只带上一轮、历史图片可开关，视频与千问语音合成继续沿用。</p>
+        <div class="kicker">What's new · 3.11.19</div>
+        <h2>工具对所有模型都下得去，语音只认一条链路</h2>
+        <p>工具链改为系统层统一下发，原生调用与文本协议同时兜底；朗读与语音输入固定走已配置的 DeepSeek；长期记忆改为由模型判断何时写入。</p>
       </div>
       <div class="grid3">
-        <div class="card"><h3>对话内出视频</h3><p>模型清单里带「视频」标记的模型，选中后直接发一句话，App 自动提交异步任务、轮询进度，成片以视频消息回到对话；不再有单独入口。</p></div>
-        <div class="card"><h3>APIClaw 接入</h3><p>预置 www.apiclaw.net/v1 地址与图标，密钥可直接拉取该站全部模型 ID。</p></div>
-        <div class="card"><h3>千问语音合成</h3><p>配置百炼（含 Token Plan）后，朗读与边出字边读都走 qwen3-tts-flash，DeepSeek 的 TTS 继续保留。</p></div>
+        <div class="card"><h3>工具链统一注入</h3><p>请求照常携带原生工具清单，同时注入一份格式说明与示例。接口不接受工具时自动回落文本协议，执行结果回传后由模型组织回答，不再把原始输出拼成正文。</p></div>
+        <div class="card"><h3>多格式工具解析</h3><p>除标准 tool_calls，还能识别 tool_call 标签、arg_key 写法、JSON 代码块与裸函数调用，模型把调用写成文字也不会漏执行。</p></div>
+        <div class="card"><h3>语音统一走 DeepSeek</h3><p>朗读与语音输入只使用配置好的 DeepSeek 接口，切换到百炼、智谱、Kimi 等对话模型时依然可用，不再随当前模型失效。</p></div>
 
-        <div class="card"><h3>Token Plan 预设</h3><p>新增「百炼 Token Plan」，base 用 token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1，配 sk-sp- 密钥直接对话；自定义地址也会按域名认出厂商图标。</p></div>
-
-        <div class="card"><h3>音视频直接对话</h3><p>附件面板可发音频与视频，支持多模态的模型会收到 input_audio 与 video_url 片段；视频超过 18 MB 自动改抽帧。</p></div>
-        <div class="card"><h3>聚合平台预设</h3><p>除百炼与 APIClaw，预置 302.AI、AiHubMix、OpenRouter、云雾AI 的接口地址，模型清单一键拉回。</p></div>
+        <div class="card"><h3>记忆由模型决定</h3><p>移除回答后的自动抓取与关键词直写，是否记录、记录什么，只在模型调用 remember 工具时写入；读取同样按需触发。</p></div>
+        <div class="card"><h3>设置页补齐</h3><p>厂商图标恢复为真实品牌图标，系统提示词打开即回填原有内容，帮助页页头固定、正文独立滚动。</p></div>
+        <div class="card"><h3>工具链开关</h3><p>设置新增「工具链」一页，可在智能注入与全量下发之间切换；智能模式按本轮意图挑工具，寒暄不下发检索类工具。</p></div>
       </div>
     </div>
   </section>
@@ -367,18 +366,18 @@
         <div class="dl-grid">
           <div>
             <h2>装上一个<br />就能开始对话的客户端</h2>
-            <p>Android 安装包，arm64，66 MB。下载后允许「未知来源安装」即可。不经过应用商店，也就不需要账号。</p>
-            <a class="dl-btn" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.15/MeowChat.apk">
+            <p>Android 安装包，arm64，67 MB。下载后允许「未知来源安装」即可。不经过应用商店，也就不需要账号。</p>
+            <a class="dl-btn" href="https://github.com/Alice-P197/meowchat/releases/download/v3.11.19/MeowChat.apk">
               <svg viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7.5 11l4.5 4.5L16.5 11"/><path d="M5 19.5h14"/></svg>
               下载 MeowChat APK
             </a>
             <div class="tips">安装包为签名版本，覆盖安装不会清空已有会话。</div>
           </div>
           <div class="requirement">
-            <div class="row"><span class="k">版本</span><span class="v">3.11.15</span></div>
+            <div class="row"><span class="k">版本</span><span class="v">3.11.19</span></div>
             <div class="row"><span class="k">架构</span><span class="v">arm64-v8a</span></div>
             <div class="row"><span class="k">系统</span><span class="v">Android 8.0 及以上</span></div>
-            <div class="row"><span class="k">体积</span><span class="v">66 MB</span></div>
+            <div class="row"><span class="k">体积</span><span class="v">67 MB</span></div>
             <div class="row"><span class="k">网络</span><span class="v">需要</span></div>
           </div>
         </div>
