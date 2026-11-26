@@ -4,7 +4,7 @@
 
 ## 下载
 
-[MeowChat 3.6.4](https://github.com/Alice-P197/meowchat/releases/download/v3.6.4/MeowChat.apk) · arm64-v8a · Android 8.0 及以上 · 36 MB
+[MeowChat 3.11.44](https://github.com/Alice-P197/meowchat/releases/download/v3.11.44/MeowChat.apk) · arm64-v8a · Android 8.0 及以上 · 70 MB
 
 安装时允许「未知来源」，覆盖安装不会清空已有会话。
 
